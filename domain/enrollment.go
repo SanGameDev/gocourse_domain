@@ -13,7 +13,7 @@ type Enrollment struct {
 	//User      *User        `json:"user,omitempty" gorm:"-"`
 	CourseID string `json:"course_id" gorm:"type:char(36);not null"`
 	// Course    *Course      `json:"course,omitempty" gorm:"-"`
-	Status    string     `json:"status" gorm:"type:char(2)"`
+	Status    string     `json:"status" gorm:"type:char(10)"`
 	CreatedAt *time.Time `json:"-"`
 	UpdatedAt *time.Time `json:"-"`
 }
